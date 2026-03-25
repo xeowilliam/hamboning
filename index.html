@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hamboning</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/jpg" href="favicom.png">
+    </head>
+    <body>
+        <div id="start" class="start-screen">
+            <div class="start-inner">
+                <img id="startBtn" src="redbutton.png" alt="Start" class="start-button">
+                <p class="start-hint">Press the button</p>
+            </div>
+        </div>
+
+        <div id="website" class="main-website" style="display:none;">
+            <audio id="audio" src="Kingdom Hearts Key (ft. redveil).mp3"> </audio>
+        </div>
+
+    <img id="muteBtn" src="mute.png" alt="Mute toggle" class="mute-button">
+
+    <img src="welcome.png" id="pix" class="welcome">
+ <div id="img-wrap" class="img-wrap"> 
+    <img src="noelle-holiday-noelle-holiday-dance.gif" class="noelle"> 
+    <img src="tnnan.png" class="tnnan"> 
+    <img src="thechicken.png" class="thechicken">
+    <img src="bob.png" class="bob">
+    <img src="cuffs.png" class="cuffs">
+    <img src="v1.png" class="v1">
+    <img src="stussy.png" class="stussy">
+    <img src="miku.png" class="miku">
+    <img src="dog.png" class="dog">
+
+</div>
+        <script>
+            let isMuted = false;
+            
+            document.getElementById('startBtn').addEventListener('click', function() {
+                document.getElementById('start').style.display = 'none';
+                document.getElementById('website').style.display = 'block';
+                document.getElementById('audio').play();
+            });
+            
+
+  const audio = document.getElementById('audio');
+  const btn   = document.getElementById('muteBtn');
+
+  btn.addEventListener('click', () => {
+      if (isMuted) {
+          audio.muted = false;        
+          btn.src = 'mute.png';
+      } else {
+          audio.muted = true;      
+          btn.src = 'unmute.png';
+      }
+      isMuted = !isMuted;
+  });
+</script>
+
+<p>Hello!! My name is William, and as of now I'm 17 and will be attending UCR during Fall to become a math teacher. I have hopes of eventually making a game in the future, and so I decided to start teaching myself some basic coding mumbo jumbo and thought making this website would be a good jumping pad! I have a lot of interests but it's all pretty common stuff for the most part, if you want to read more information about me then click the tabs below!</p>
+<p class="p1">Note: This website's still a work in progress! So far only the home page and socials are finished, but I'll have it updated soon!</p>
+<div class="pages">
+    <a href="index.html" >Home</a>
+    <a href="socials.html" >Socials</a>
+    <a href="music.html" >Music</a>
+    <a href="games.html" >Games</a>
+</div>
+    </body>
+
+
+</html>

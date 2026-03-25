@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 115%;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.start-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.start-button {
+    cursor: pointer;
+    width: 80%;
+    height: auto;
+}
+
+.welcome{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: swoon;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    width: clamp(250px,40vw,550px);
+    height: auto;
+    z-index: 1110;
+}
+@keyframes swoon {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(7deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-7deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.img-wrap {
+    position: relative;
+    width: clamp(200px,30vw,400px);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+}
+
+
+.noelle { 
+    display: block; 
+    position: relative;
+    width: clamp(200px,30vw,400px); 
+    height: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.tnnan { 
+    position: absolute;  
+    width: clamp(120px,19vw,230px); 
+    height: auto;
+    top: 0%;
+    left: 90%;
+    z-index: 90;
+
+}
+.miku { 
+    position: absolute;  
+    width: clamp(120px,19vw,230px); 
+    height: auto;
+    top: 0%;
+    left: 120%;
+    z-index: 100;
+
+}
+.stussy { 
+    position: absolute;  
+    width: clamp(120px,19vw,230px); 
+    height: auto;
+    bottom: 80%;
+    left: 90%;
+    z-index: 93;
+    transform: rotate(75deg);
+
+
+}
+
+.cuffs { 
+    position: absolute;  
+    width: clamp(110px,19vw,220px); 
+    height: auto;
+    bottom: 55%;
+    left: 110%;
+    z-index: 95;
+    transform: rotate(187deg);
+
+}
+
+.bob { 
+    position: absolute;  
+    width: clamp(120px,19vw,230px); 
+    height: auto;
+    top: 13%;
+    right: 92%;
+    z-index: 100;
+
+}
+
+.dog { 
+    position: absolute;  
+    width: clamp(150px,19vw,280px); 
+    height: auto;
+    top: -30%;
+    right: 112%;
+    transform: rotate(5deg);
+    z-index: 98;
+
+}
+.thechicken { 
+    position: absolute;  
+    width: clamp(120px,19vw,230px); 
+    height: auto;
+    bottom: 67%;
+    right: 83%;
+    transform: rotate(15deg);
+    z-index: 1;
+}
+
+.v1 { 
+    position: absolute;  
+    width: clamp(120px,19vw,230px); 
+    height: auto;
+    bottom: 120%;
+    right: 110%;
+    transform: rotate(15deg);
+    z-index: 1;
+}
+
+.mute-button {
+    cursor: pointer;
+    width: 70px;
+    height: auto;
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    z-index: 1200;
+}
+
+.start-inner {
+    text-align: center;
+}
+
+.start-hint {
+    color: #ffffff;
+    margin-top: 12px;
+    font-size: 28px;
+    font-family: "Jersey 15";
+    opacity: 0.95;
+}
+
+p{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 25px;
+    max-width: min(90%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.pages{
+    text-align: center;
+    position: relative
+}
+.pages a{
+    color: rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 28px;
+    margin: 0 15px;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    padding: 30px 7px;
+}
+.p1{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 20px;
+    max-width: min(90%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+
+body{
+    background-image: url(streambackground.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+
+@media (max-width: 840px) {
+    body {
+        background-attachment: scroll;
+        background-size: cover;
+        min-height: 100dvh;
+    }
+  
+    .noelle { 
+    display: block; 
+    position: relative;
+    width: clamp(400px,30vw,600px); 
+    height: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+    p{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 35px;
+    max-width: min(90%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+    .start-button {
+        width: min(65vw, 280px);
+    }
+
+    .img-wrap {
+        width: min(75vw, 340px);
+    }
+  
+    .pages a {
+        font-size: clamp(20px, 6vw, 28px);
+        margin: 6px 8px;
+    
+    }
+
+    .tnnan { top: 12%; left: 88%; width: 180px; height: auto; }
+    .miku { top: 12%; left: 112%; width: 180px; height: auto; }
+    .stussy { bottom: 72%; left: 75%; }
+    .cuffs { bottom: 58%; left: 112%; transform: rotate(43deg); }
+    .bob { top: 24%; right: 84%; width: 180px; height: auto; }
+    .dog { top:0%; right: 112%; width: 200px; height: auto;}
+    .thechicken { bottom: 58%; right: 80%; width: 200px; height: auto;}
+    .v1 { bottom: 98%; right: 98%; width: 220px; height: auto; }
+
+}
+@media (max-width: 500px) {
+
+    .start-hint {
+    color: #ffffff;
+    margin-top: 12px;
+    font-size: 25px;
+    font-family: "Jersey 15";
+    opacity: 0.95;
+}
+    .welcome {
+        width: min(82vw, 240px);
+    }
+
+    .img-wrap {
+        width: min(82vw, 300px);
+    }
+
+    .start-hint {
+        font-size: clamp(14px, 4.8vw, 18px);
+    }
+
+    .mute-button {
+        width: 60px;
+        bottom: 75px;
+        left: auto;
+        right: 15px;
+    }
+
+    .tnnan { top: 15%; left: 72%; }
+    .miku { top: 15%; left: 87%; }
+    .stussy { bottom: 68%; left: 68%; }
+    .cuffs { bottom: 52%; left: 84%; width: 90px; height: auto; }
+    .bob { top: 28%; right: 76%; }
+    .dog { top: -10%; right: 85%;}
+    .thechicken { bottom: 58%; right: 64%; width: 130px; height: auto;}
+    .v1 { bottom: 88%; right: 78%; width: 150px; height: auto; }
+    
+  
+    .noelle { 
+    display: block; 
+    position: relative;
+    width: clamp(200px,30vw,400px); 
+    height: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+    
+    .tnnan { width: 100px; height: auto;}
+    .miku { width: 100px; height: auto;}
+    .bob { width: 100px; height: auto;}
+    .dog { width: 130px; height: auto;}
+
+    p{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 25px;
+    max-width: min(90%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+    .p1{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 20px;
+    max-width: min(90%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.pages{
+    bottom: 0px;
+}
+}
+
+@media (hover: none) {
+  body {
+    background-attachment: scroll;
+  }
+}

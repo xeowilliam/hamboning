@@ -1,0 +1,105 @@
+body{
+    background-image: url(streambackground.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+p{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: clamp(18px, 3.6vw, 28px);
+    max-width: min(90%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+ .p1{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 20px;
+    max-width: min(90%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ }
+.pages{
+    text-align: center;
+}
+
+.album{
+    width: 29%;
+    height: auto;
+    display: inline-block;
+    margin: 5px;
+
+}
+
+.album-row{
+    text-align: center;
+}
+
+.album2{
+    width: 29%;
+    height: auto;
+    display: inline-block;
+}
+
+.album2-row{
+    text-align: center;
+}
+
+.construction{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 45px;
+    text-align: center;
+}
+.pages a{
+    color: rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 28px;
+    margin: 0 15px;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    padding: 30px 7px;
+}
+
+@media (max-width: 500px) {
+  p{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 25px;
+    max-width: min(90%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+ .pages a {
+        font-size: clamp(20px, 6vw, 28px);
+        margin: 6px 8px;
+    }
+
+}
+
+
+@media (hover: none) {
+  body {
+    background-attachment: scroll;
+  }
+}

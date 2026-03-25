@@ -1,0 +1,127 @@
+body{
+    background-image: url(streambackground.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 400%;
+    text-align: center;
+
+}
+
+h2{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 300%;
+    text-align: center;
+}
+
+.album{
+    width: 29%;
+    height: auto;
+    display: inline-block;
+    margin: 5px;
+
+}
+
+.album-row{
+    text-align: center;
+}
+ p{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 25px;
+    max-width: min(90%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+.audio{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-player{
+    text-align: center;
+}
+
+.play-button{
+    width: 110px;
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+.pages{
+    width: 100%;
+    text-align: center;
+}
+
+.pages a{
+    color: rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 28px;
+    margin: 0 15px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    padding: 30px 7px;
+}
+
+
+
+@media (max-width: 480px) {
+  p{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 23px;
+    max-width: min(90%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+    h1{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 360%;
+    text-align: center;
+}
+h2{
+    -webkit-text-stroke: rgb(71, 0, 71);
+    -webkit-text-stroke-width: 1px;
+    color:rgb(231, 125, 255);
+    font-family: "Jersey 15";
+    font-size: 250%;
+    text-align: center;
+}
+ .pages a {
+        font-size: clamp(20px, 6vw, 28px);
+        text-align: center;
+        margin: 6px 8px;
+    }
+@media (hover: none) {
+  body {
+    background-attachment: scroll;
+  }
+}
+}
